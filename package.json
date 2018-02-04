@@ -1,0 +1,41 @@
+{
+  "name": "pipe-with",
+  "version": "0.0.0",
+  "description": "choose how to glue a pipeline of functions together (and keep type information)",
+  "license": "MIT",
+  "repository": "justinvdm/",
+  "author": {
+    "name": "justinvdm",
+    "email": "justnvdm@gmail.com"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "check": "npm run lint && npm run typecheck && npm run test",
+    "test": "ava",
+    "typecheck": "flow --color always",
+    "lint": "standard './**/*.js' './**/*.js.flow'"
+  },
+  "files": [
+    "index.js",
+    "index.js.flow"
+  ],
+  "keywords": [
+    ""
+  ],
+  "devDependencies": {
+    "ava": "latest",
+    "babel-eslint": "latest",
+    "flow-bin": "latest",
+    "prettier-standard": "latest",
+    "standard": "latest",
+    "eslint-plugin-flowtype": "latest"
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "plugins": [
+      "flowtype"
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+// @flow
+/* eslint-disable no-undef */
+
+declare function pipe(): (...any) => any
+declare function pipeWith(): any => (...any) => any
+
+declare module.exports: {
+  pipe: pipe,
+  pipeWith: pipeWith
+}

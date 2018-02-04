@@ -1,0 +1,16 @@
+language: node_js
+
+script: 'npm run check'
+
+node_js:
+  - 'node'
+  - 8
+  - 6
+  - 4
+
+before_install:
+- '[[ $(node -v) =~ ^v9.*$ ]] || npm i -g npm@latest'
+- npm i -g greenkeeper-lockfile@1
+
+before_script: greenkeeper-lockfile-update
+after_script: greenkeeper-lockfile-upload
