@@ -1,7 +1,6 @@
 # pipe-with
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/justinvdm/pipe-with.svg)](https://greenkeeper.io/)
-
 [![Build Status](https://travis-ci.org/justinvdm/pipe-with.svg?branch=master)](https://travis-ci.org/justinvdm/pipe-with)
 
 
