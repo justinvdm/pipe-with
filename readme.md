@@ -13,7 +13,7 @@ const fn = pipe(
   v => Promise.resolve(v + 1),
   v => Promise.resolve(v * 2))
 
-const res = fn(23)
+fn(23).then(console.log)  // 48
 ```
 
 and with flow:
