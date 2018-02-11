@@ -8,11 +8,11 @@
 > choose how to glue a pipeline of functions together (and keep type information)
 
 ```js
-const pipe = pipeWith(fn => ma => ma.then(fn));
+const pipe = pipeWith(fn => ma => ma.then(fn))
 
 const fn = pipe(
   v => Promise.resolve(v + 1),
-  v => Promise.resolve(v * 2));
+  v => Promise.resolve(v * 2))
 
 const res = fn(23)
 ```
@@ -36,8 +36,8 @@ Takes in a bind function and returns a corresponding pipe function. The pipe fun
 For example, if we wanted to compose promise-returning functions, `bindFn` could look like this:
 
 ```js
-const bind = <A, B>(fn: A => Promise<B>): ((Promise<A>) => Promise<B>) => ma =>
-  ma.then(fn);
+const bind = <A, B>(fn: A => Promise<B>): ((Promise<A>) => Promise<B>) =>
+  ma => ma.then(fn)
 ```
 
 ### `pipe([...fns])`
