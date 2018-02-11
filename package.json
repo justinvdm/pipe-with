@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "choose how to glue a pipeline of functions together (and keep type information)",
   "license": "MIT",
-  "repository": "justinvdm/",
+  "repository": "justinvdm/pipe-with",
   "author": {
     "name": "justinvdm",
     "email": "justnvdm@gmail.com"
@@ -22,7 +22,10 @@
     "index.js.flow"
   ],
   "keywords": [
-    ""
+    "pipe",
+    "compose",
+    "monads",
+    "flow"
   ],
   "devDependencies": {
     "ava": "latest",
