@@ -26,6 +26,10 @@ and with flow:
 $ npm i pipe-with
 ```
 
+## important note on flow typing
+
+> For pipe functions called with more than 16 arguments, no flow typing is supported at the moment
+
 ## api
 
 ### `pipeWith(bindFn)`
