@@ -1,14 +1,13 @@
 language: node_js
-
 node_js:
-  - 'node'
-  - 8
-  - 6
-  - 4
-
+- node
+- 8
+install: npm install
 before_install:
-- '[[ $(node -v) =~ ^v9.*$ ]] || npm i -g npm@latest'
-- npm i -g greenkeeper-lockfile@1
-
+- "[[ $(node -v) =~ ^v9.*$ ]] || npm i -g npm@latest"
+- npm i -g greenkeeper-lockfile
 before_script: greenkeeper-lockfile-update
 after_script: greenkeeper-lockfile-upload
+env:
+  global:
+    secure: eeYGNQVIfMuO/CuyNUsRl9IiQScQWjwCRkDQkwQ/DpL+cp4+WqIOrXeH9ti5+6RbuFGVERwMaHwRtmLSx2KVurJgW+0FtePowuD1RZFz7ekm/Gzh3BTo0v86yihfMvoGVqxjwLkrCOdodukJBwtd2hJVfJY9IXIWcJ6QUGwe6jc7CGKLScwS30EwpgPNDUiN6iU1lnQE7r8uClpQ/fP2P8MxiiPqrVgNSQKUHEK5LaI3/tdb4NgSU+4aX9331MOueOtVTS7MV4uGVl+u4LvqzAkzjndKHLaEFJDLBWmv5nLKYe6NNDEEbV/E8c1buwNkN75hJ+XBWgPgCmD7FDT1vnApEOd9eHJ3Vq/VZjlfJqqjReOtfm3ERtEwrciV+7IRX6lBG2VqG8fflQBiyl61HB2vb9hQQGspCVmyclyqpVhJmCuqUmor9i4LyUrd9D6SzVNgYhixYpUT3RvOdCR5NEBLVpW8i5roJGpD2XbNG0dHCHnv4i4DY7kWChIucMSwTpY1zWEIajV8UuVajLNSJnU80y80hC0pAFFEfOpxbNYj0IIJtNjTJvUVMnoQVv5ekIvJWeqjbBmS/wxewIIsBjwN0Nj6yjPb81ZA0wxPc2sOb9QX9fMZvPTAaB7TdgFZD2x2x+1ntvBC5b3Bt1d50fOMxjL53sBtdiqLPu1fsXI=
