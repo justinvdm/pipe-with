@@ -1,5 +1,5 @@
 // @flow
-/* eslint-disable no-undef */
+/* eslint-disable no-undef, no-unused-vars */
 
 declare export var pipe: $ComposeReverse
 
