@@ -2,8 +2,7 @@
 
 [![Build Status](https://travis-ci.org/justinvdm/pipe-with.svg?branch=master)](https://travis-ci.org/justinvdm/pipe-with)
 
-
-> choose how to glue a pipeline of functions together (and keep type information)
+(type-aware) utility function for defining how a pipeline of functions should be composed
 
 ```js
 const pipe = pipeWith(fn => ma => ma.then(fn))
@@ -25,9 +24,9 @@ and with flow:
 $ npm i pipe-with
 ```
 
-## important note on flow typing
+## important note for type definitions
 
-> For pipe functions called with more than 16 arguments, no flow typing is supported at the moment
+When using this library with flow or typescript, there is a limit of 16 arguments for `pipe` functions.
 
 ## api
 

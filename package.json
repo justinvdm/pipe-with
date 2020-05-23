@@ -1,46 +1,52 @@
 {
   "name": "pipe-with",
   "version": "0.1.2",
-  "description": "choose how to glue a pipeline of functions together (and keep type information)",
+  "description": "(type-aware) utility function for defining how a pipeline of functions should be composed",
   "license": "MIT",
   "repository": "justinvdm/pipe-with",
+  "type": "commonjs",
+  "main": "index.js",
   "author": {
     "name": "justinvdm",
     "email": "justnvdm@gmail.com"
   },
   "engines": {
-    "node": ">=8"
+    "node": ">=10"
   },
   "scripts": {
-    "test": "npm run lint && npm run typecheck && npm run unit",
-    "unit": "ava",
-    "typecheck": "flow --color always",
-    "lint": "standard './**/*.js' './**/*.js.flow'",
-    "release": "np"
+    "build": "otr build",
+    "lint": "otr lint",
+    "format": "otr format",
+    "test": "otr test",
+    "release": "otr release",
+    "typetest": "flow",
+    "checks": "yarn lint && yarn typetest && yarn test"
   },
   "files": [
     "index.js",
-    "index.js.flow"
+    "index.mjs",
+    "index.js.flow",
+    "dist/*"
   ],
   "keywords": [
     "pipe",
+    "pipeline",
     "compose",
     "monads",
+    "typescript",
     "flow"
   ],
-  "devDependencies": {
-    "ava": "^0.25.0",
-    "babel-eslint": "^10.0.1",
-    "eslint-plugin-flowtype": "^3.2.0",
-    "flow-bin": "^0.86.0",
-    "np": "^3.0.4",
-    "prettier-standard": "^8.0.1",
-    "standard": "^12.0.1"
+  "oftherivier": {
+    "type": "es5",
+    "src": "index.js"
   },
-  "standard": {
-    "parser": "babel-eslint",
-    "plugins": [
-      "flowtype"
+  "renovate": {
+    "extends": [
+      "github>oftherivier/tools"
     ]
+  },
+  "devDependencies": {
+    "@oftherivier/tools": "^0.1.35",
+    "flow-bin": "^0.125.1"
   }
 }
