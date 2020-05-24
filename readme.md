@@ -14,10 +14,6 @@ const fn = pipe(
 fn(23).then(console.log)  // 48
 ```
 
-and with flow:
-
-![example](example.gif)
-
 ## install
 
 ```
