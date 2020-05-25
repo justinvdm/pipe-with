@@ -1,6 +1,6 @@
 {
   "name": "pipe-with",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "(type-aware) utility function for defining how a pipeline of functions should be composed",
   "license": "MIT",
   "repository": "justinvdm/pipe-with",
