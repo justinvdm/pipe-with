@@ -4,8 +4,13 @@
   "description": "(type-aware) utility function for defining how a pipeline of functions should be composed",
   "license": "MIT",
   "repository": "justinvdm/pipe-with",
+  "types": "./index.d.ts",
   "type": "commonjs",
   "main": "index.js",
+  "exports": {
+    "import": "./index.mjs",
+    "require": "./index.js"
+  },
   "author": {
     "name": "justinvdm",
     "email": "justnvdm@gmail.com"
