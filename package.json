@@ -51,7 +51,7 @@
     ]
   },
   "devDependencies": {
-    "@oftherivier/tools": "0.1.38",
+    "@oftherivier/tools": "0.1.41",
     "flow-bin": "0.125.1"
   }
 }
