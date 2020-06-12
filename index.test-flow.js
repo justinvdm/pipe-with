@@ -17,7 +17,7 @@ test('pipeWith', () => {
     (v: number): Promise<number> => Promise.resolve(v * 3)
   )
 
-  // $ExpectError
+  // $FlowIgnore
   pipe(
     (v: number): Promise<number> => Promise.resolve(v * 2),
     (v: string): Promise<string> => Promise.resolve(v.toString()),
